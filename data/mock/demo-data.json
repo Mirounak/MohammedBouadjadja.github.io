@@ -1,0 +1,57 @@
+{
+  "members": [
+    { "id": "m-001", "fullName": "Yacine Boudiaf", "planId": "plan-starter", "joinedAt": "2026-02-08", "status": "active" },
+    { "id": "m-002", "fullName": "Kenza Amrani", "planId": "plan-pro", "joinedAt": "2026-02-10", "status": "active" },
+    { "id": "m-003", "fullName": "Sofiane Khider", "planId": "plan-starter", "joinedAt": "2026-02-18", "status": "paused" },
+    { "id": "m-004", "fullName": "Lina Mansouri", "planId": "plan-pro", "joinedAt": "2026-03-03", "status": "active" },
+    { "id": "m-005", "fullName": "Meriem Belkacem", "planId": "plan-scale", "joinedAt": "2026-03-04", "status": "active" },
+    { "id": "m-006", "fullName": "Anis Ferhat", "planId": "plan-starter", "joinedAt": "2026-03-16", "status": "expired" },
+    { "id": "m-007", "fullName": "Nassim Bensalem", "planId": "plan-pro", "joinedAt": "2026-03-21", "status": "active" },
+    { "id": "m-008", "fullName": "Imene Ouali", "planId": "plan-pro", "joinedAt": "2026-04-02", "status": "active" },
+    { "id": "m-009", "fullName": "Rania Touati", "planId": "plan-scale", "joinedAt": "2026-04-12", "status": "active" },
+    { "id": "m-010", "fullName": "Zinedine Hamla", "planId": "plan-starter", "joinedAt": "2026-04-22", "status": "paused" },
+    { "id": "m-011", "fullName": "Nourredine Saadi", "planId": "plan-starter", "joinedAt": "2026-05-04", "status": "active" },
+    { "id": "m-012", "fullName": "Samia Rezig", "planId": "plan-pro", "joinedAt": "2026-05-17", "status": "active" }
+  ],
+  "membershipPlans": [
+    { "id": "plan-starter", "name": "Starter", "monthlyPriceDzd": 7500, "visitsPerWeek": 3 },
+    { "id": "plan-pro", "name": "Pro", "monthlyPriceDzd": 12000, "visitsPerWeek": 7 },
+    { "id": "plan-scale", "name": "Scale", "monthlyPriceDzd": 18500, "visitsPerWeek": 14 }
+  ],
+  "exercises": [
+    "Back Squat",
+    "Deadlift",
+    "Bench Press",
+    "Pull-Up",
+    "Overhead Press",
+    "Barbell Row",
+    "Walking Lunge",
+    "Plank"
+  ],
+  "coaches": [
+    { "id": "c-001", "name": "Abdelkader Meziane", "speciality": "Strength" },
+    { "id": "c-002", "name": "Nadia Djeradi", "speciality": "Weight Loss" },
+    { "id": "c-003", "name": "Hakim Bensaci", "speciality": "Rehabilitation" }
+  ],
+  "facilities": [
+    "Strength Zone",
+    "Cardio Hall",
+    "Functional Studio",
+    "Recovery Room"
+  ],
+  "samplePayments": [
+    { "id": "p-001", "memberId": "m-001", "amountDzd": 7500, "method": "cash", "status": "paid", "paidAt": "2026-07-01" },
+    { "id": "p-002", "memberId": "m-002", "amountDzd": 12000, "method": "card", "status": "paid", "paidAt": "2026-07-02" },
+    { "id": "p-003", "memberId": "m-006", "amountDzd": 7500, "method": "qr", "status": "failed", "paidAt": "2026-07-03" }
+  ],
+  "sampleWorkoutPlans": [
+    { "name": "Beginner Strength", "daysPerWeek": 3 },
+    { "name": "Lean Cut Plan", "daysPerWeek": 5 },
+    { "name": "Athletic Conditioning", "daysPerWeek": 4 }
+  ],
+  "sampleNutritionPlans": [
+    { "name": "Maintenance 2400", "goal": "maintenance", "calories": 2400 },
+    { "name": "Fat Loss 1900", "goal": "fat-loss", "calories": 1900 },
+    { "name": "Mass Gain 3000", "goal": "muscle-gain", "calories": 3000 }
+  ]
+}
