@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GymFlow is a white-label Gym SaaS platform for memberships, coaching, and operations."
+    />
+    <title>GymFlow | White-Label Gym SaaS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="GymFlow home">GymFlow</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#platform">Platform</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="btn btn-primary" id="openDemoModal" type="button">Request Demo</button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="home" class="section hero">
+        <div class="container grid-two">
+          <div>
+            <span class="badge">Built for Algerian gyms</span>
+            <h1>Launch a premium gym platform your members actually use.</h1>
+            <p>
+              GymFlow helps gyms manage memberships, payments, classes, coaching, and AI-powered routines
+              in one reusable white-label SaaS foundation.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="#contact">Start MVP</a>
+              <button class="btn btn-secondary" id="openPreviewModal" type="button">See Preview</button>
+            </div>
+          </div>
+          <div class="card metric-panel" aria-label="Platform preview metrics">
+            <h2>Demo Snapshot</h2>
+            <div class="table-wrap">
+              <table>
+                <caption class="sr-only">Platform performance metrics</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Metric</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Active Members</td>
+                    <td id="membersCount">--</td>
+                  </tr>
+                  <tr>
+                    <td>Monthly Revenue</td>
+                    <td id="revenueValue">--</td>
+                  </tr>
+                  <tr>
+                    <td>Retention</td>
+                    <td>91%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="chart" aria-hidden="true">
+              <span style="height: 42%"></span>
+              <span style="height: 59%"></span>
+              <span style="height: 68%"></span>
+              <span style="height: 74%"></span>
+              <span style="height: 81%"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2>Reusable UI foundation</h2>
+          <p class="section-intro">Consistent components ready for Phase 2+ features.</p>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Membership Core</h3>
+              <p>Plans, renewals, and payment states with clear member lifecycle tracking.</p>
+            </article>
+            <article class="card">
+              <h3>Operational Dashboard</h3>
+              <p>Tables, charts, empty/error states, and notifications designed for admins.</p>
+            </article>
+            <article class="card">
+              <h3>AI-Ready Architecture</h3>
+              <p>Structured to plug in workout and nutrition APIs without redesigning the product.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="platform" class="section surface">
+        <div class="container">
+          <h2>Member & admin experience preview</h2>
+          <p class="section-intro">State handling pattern for loading, empty, and error scenarios.</p>
+          <div class="state-layout">
+            <article class="card">
+              <h3>Skeleton Loading State</h3>
+              <div class="skeleton-group" aria-live="polite" aria-busy="true">
+                <div class="skeleton line"></div>
+                <div class="skeleton line short"></div>
+                <div class="skeleton box"></div>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Empty State</h3>
+              <div class="state-box">
+                <p>No workout plans assigned yet.</p>
+                <button class="btn btn-secondary" id="notifyEmpty" type="button">Notify Coach</button>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Error State</h3>
+              <div class="state-box error" role="alert">
+                <p>Payment sync failed. Please retry.</p>
+                <button class="btn btn-danger" id="retrySync" type="button">Retry</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="container">
+          <h2>Simple DZD pricing plans</h2>
+          <div class="card-grid">
+            <article class="card pricing-card">
+              <span class="badge">Starter</span>
+              <h3>7 500 DZD / month</h3>
+              <p>For small gyms launching online memberships.</p>
+            </article>
+            <article class="card pricing-card featured">
+              <span class="badge">Most Popular</span>
+              <h3>12 000 DZD / month</h3>
+              <p>Includes member dashboard and payment test flow.</p>
+            </article>
+            <article class="card pricing-card">
+              <span class="badge">Scale</span>
+              <h3>18 500 DZD / month</h3>
+              <p>Adds advanced analytics and multi-branch readiness.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section surface">
+        <div class="container grid-two">
+          <div>
+            <h2>Request your MVP kickoff</h2>
+            <p>
+              Frontend prototype, mock data, and API-ready architecture are clearly separated to keep delivery
+              transparent and secure.
+            </p>
+          </div>
+          <form class="card" id="leadForm" novalidate>
+            <label for="gymName">Gym name</label>
+            <input id="gymName" name="gymName" type="text" required />
+
+            <label for="ownerName">Owner name</label>
+            <input id="ownerName" name="ownerName" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="planSelect">Preferred plan</label>
+            <select id="planSelect" name="planSelect">
+              <option value="Starter">Starter</option>
+              <option value="Pro">Pro</option>
+              <option value="Scale">Scale</option>
+            </select>
+
+            <button class="btn btn-primary" type="submit">Submit request</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> GymFlow. Built as a reusable Gym SaaS template.</small>
+      </div>
+    </footer>
+
+    <dialog id="demoModal" class="modal" aria-labelledby="demoModalTitle">
+      <h2 id="demoModalTitle">Demo Scope</h2>
+      <p>
+        Phase 1 includes a production-style landing page and reusable UI primitives. Backend APIs and payment
+        credentials are integrated in later phases.
+      </p>
+      <button class="btn btn-secondary close-modal" type="button">Close</button>
+    </dialog>
+
+    <dialog id="previewModal" class="modal" aria-labelledby="previewModalTitle">
+      <h2 id="previewModalTitle">Preview Notes</h2>
+      <p>
+        This page uses mock metrics only. Real membership, payments, and AI workflows will connect to secured
+        APIs in subsequent phases.
+      </p>
+      <button class="btn btn-secondary close-modal" type="button">Close</button>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>
